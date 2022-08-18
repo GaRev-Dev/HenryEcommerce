@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MenuItems } from "./Menuitems";
 import CartWidget from "../CartWidget";
+import SearchBar from "../SearchBar/SearchBar";
 import "./NavBar.css";
 
 function NavBar() {
@@ -21,6 +22,7 @@ function NavBar() {
       <div className="menu-icon" onClick={handleClick}>
         <i className={!clicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
+      <SearchBar className="searchBar" />
       <ul className={!clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
@@ -33,7 +35,7 @@ function NavBar() {
         })}
       </ul>
       <CartWidget />
-      <button>Sign Up</button>
+      <button className="btn-home">Sign Up</button>
     </nav>
   );
 }
