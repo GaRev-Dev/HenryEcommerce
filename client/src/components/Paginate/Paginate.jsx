@@ -14,9 +14,7 @@ export default function Pagination({phonesPerPage, allPhones, paginate}){
         {
           pageNumber?.map((number) => 
             (
-             
-                 <button className="number" onClick={() =>{ paginate(number)}}>{number}</button>
-              
+               <button className="number" onClick={() =>{ paginate(number)}}>{number}</button>
             )
           )
         }
