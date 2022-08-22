@@ -7,6 +7,9 @@ import {
   POST_PHONE,
   GET_BRANDS,
   GET_PHONE_BY_NAME,
+  GET_USER,
+  CREATE_USER,
+  LOG_IN,
 } from "../actions/actionTypes";
 
 const initialState = {
@@ -14,6 +17,7 @@ const initialState = {
   phonesOne: [],
   detail: [],
   brands: [],
+  users: []
 };
 
 function rootReducer(state = initialState, action) {
@@ -75,6 +79,19 @@ function rootReducer(state = initialState, action) {
         ...state,
         phones: action.payload,
       };
+    case GET_USER:
+      return {
+        ...state,
+        users: action.payload
+      }
+    case CREATE_USER:
+      return {
+        ...state
+      }
+    case LOG_IN:
+      return {
+        ...state
+      }  
     default:
       return state;
   }

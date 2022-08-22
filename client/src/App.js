@@ -22,6 +22,7 @@ function App() {
           duration={5}
           transition={2}
         />
+        
       </header>
       <main>
         <Routes>

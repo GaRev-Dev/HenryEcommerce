@@ -7,6 +7,7 @@ import {
   CLEAN_DETAIL,
   GET_BRANDS,
   GET_PHONE_BY_NAME,
+  GET_USER,
 } from "./actionTypes";
 
 export function getPhones() {
@@ -84,4 +85,29 @@ export function getPhoneName(name) {
       console.log(err);
     }
   };
+}
+
+export function getUser() {
+  return async function (dispatch) {
+    try {
+      let profile = await axios.get("http://localhost:3001/users/profile/");
+      return dispatch({ type: GET_USER, payload: profile.data });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+}
+
+export function createUser(payload){
+  return async function(dispatch){
+    let userCreate = axios.post("http://localhost:3001/users/", payload)
+    return userCreate;
+  }
+}
+
+export function logIn(payload){
+  return async function(dispatch){
+    let account = axios.post("http://localhost:3001/users/login", payload)
+    return account;
+  }
 }

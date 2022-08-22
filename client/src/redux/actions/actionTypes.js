@@ -6,3 +6,6 @@ export const CLEAN_DETAIL = "CLEAN_DETAIL";
 export const POST_PHONE = "POST_PHONE";
 export const GET_BRANDS = "GET_BRANDS";
 export const GET_PHONE_BY_NAME = "GET_PHONE_BY_NAME";
+export const LOG_IN = 'LOG_IN';
+export const CREATE_USER = 'CREATE_USER';
+export const GET_USER = 'GET_USER';

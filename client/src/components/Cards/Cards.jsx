@@ -1,17 +1,18 @@
 import React from "react";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getPhones } from "../../redux/actions/actionCreators";
+// import { useEffect } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { getPhones } from "../../redux/actions/actionCreators";
 import Card from "../Card/Card.jsx";
+
 import "./Cards.css";
 
-export default function Cards() {
-  const dispatch = useDispatch();
-  const allPhones = useSelector((state) => state.phones);
+export default function Cards({currentPhones}) {
+  // const dispatch = useDispatch();
+  // const allPhones = useSelector((state) => state.phones);
 
-  useEffect(() => {
-    dispatch(getPhones());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getPhones());
+  // }, [dispatch]);
 
   return (
     <div
@@ -22,9 +23,10 @@ export default function Cards() {
     //   justifyContent: "center",
     // }}
     // className="container"
-    >
+    > 
+  
       <div className="card-container">
-        {allPhones.map((product) => {
+        {currentPhones.map((product) => {
           return (
             // <div>
             //   {/* <Card name={p.name} image={p.image} /> */}
@@ -40,7 +42,7 @@ export default function Cards() {
             <Card
               key={product.id}
               id={product.id}
-              name={product.name}
+              name={product.name[0].toUpperCase() + product.name.slice(0,45)}
               image={product.image}
               brand={product.brand}
               price={product.price}
