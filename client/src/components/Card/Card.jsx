@@ -24,7 +24,8 @@ function Card({ id, name, image, brand, price }) {
                   <div className="img-info">
                     <div className="info-inner">
                       <span className="p-name">
-                        {name.length > 8 ? name[0].toUpperCase() + name.slice(2,30) : name}
+                        {/* {name.length > 9 ? name[0].toUpperCase() + name.slice(2,30) : name} */}
+                        {name.length > 10? name[0].toUpperCase() + name.slice(2,30) : name }
                       </span>
                     </div>
                     <div className="a-size">
