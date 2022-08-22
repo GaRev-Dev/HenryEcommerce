@@ -39,7 +39,6 @@ function CardsContainer() {
           paginate={paginate} 
          /> 
    </div>
-
       <Cards 
         allPhones={allPhones}
         paginate ={paginate}

@@ -42,7 +42,7 @@ export default function Cards({currentPhones}) {
             <Card
               key={product.id}
               id={product.id}
-              name={product.name}
+              name={product.name }
               image={product.image}
               brand={product.brand}
               price={product.price}
