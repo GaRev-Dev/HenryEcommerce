@@ -35,7 +35,7 @@ function App() {
           {/* <Route exact path="/user" component={RouteGuard} /> */}
           <Route exact path="/phone/:id" element={<CardDetailContainer />} />
           <Route exact path="/contact" element={<ContactUs />} />
-          <Route exact path="/create" element={<PhoneCreate />}/>
+          {/* <Route exact path="/create" element={<PhoneCreate />}/> */}
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<CardsContainer />} />
         </Routes>
