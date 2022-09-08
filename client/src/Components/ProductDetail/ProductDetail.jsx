@@ -109,7 +109,7 @@ function ProductDetail() {
                   <div className="item__container_first">
                     <div className="item__container--item">
                       <p>
-                        <strong>Brand:</strong>
+                        <strong>Marca:</strong>
                       </p>
                       <p>{producto?.brands}</p>
                     </div>
