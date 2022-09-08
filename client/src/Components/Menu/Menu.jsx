@@ -162,7 +162,7 @@ function Menu() {
 
   return (
     <div className="menu__container">
-      {/* <SearchBar setFilter={page} setCurrentPage={setCurrentPage} /> */}
+      <SearchBar setFilter={setFilter} />
       <div className="menu_filter_container">
         <div className="block-filters-products">
           <div className="filter-container col-2">

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Search } from 'react-bootstrap-icons';
 import './SearchBar.css';
+import { changePagina } from '../../Redux/actions/actions';
+import { useDispatch } from 'react-redux';
 
-function SearchBar({ setFilter, setCurrentPage }) {
+function SearchBar({ setFilter }) {
   const [input, setInput] = useState('');
+  const dispatch = useDispatch();
 
   function handleInput(e) {
     setInput(e.target.value);
@@ -12,7 +15,7 @@ function SearchBar({ setFilter, setCurrentPage }) {
   function handleSubmit(e) {
     e.preventDefault();
     setFilter('search', input);
-    setCurrentPage(1);
+    dispatch(changePagina(1));
   }
 
   return (
