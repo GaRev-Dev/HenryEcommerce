@@ -17,7 +17,7 @@ function AdminSearchBarProduct({ setFilter }) {
       <input
         className="search__input ps-2"
         type="text"
-        placeholder="search"
+        placeholder="buscar"
         value={input}
         onChange={handleInput}
         onKeyDown={(e) => {

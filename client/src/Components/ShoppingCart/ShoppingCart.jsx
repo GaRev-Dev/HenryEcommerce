@@ -62,6 +62,11 @@ function ShoppingCart() {
 
   const addToCart = (id) => {
     let payload = {};
+    if (user === undefined) {
+      payload = {
+        idtelefono: id,
+      };
+    }
     if (user === null) {
       payload = {
         idtelefono: id,
@@ -95,6 +100,7 @@ function ShoppingCart() {
 
   const handleDeleteCart = () => {
     dispatch(deleteCart(user));
+    dispatch(changePagina(1));
   };
 
   const handleDelete = (id, all = false) => {

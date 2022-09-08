@@ -144,7 +144,7 @@ function CreateOrEdit({ data }) {
           <hr />
           <Row className="mb-3">
             <Form.Group as={Col} controlId="burgerName">
-              <Form.Label>Name *</Form.Label>
+              <Form.Label>Nombre *</Form.Label>
               <Form.Control
                 placeholder="Nombre *"
                 onChange={onChange}
@@ -155,7 +155,7 @@ function CreateOrEdit({ data }) {
             </Form.Group>
 
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Price *</Form.Label>
+              <Form.Label>Precio *</Form.Label>
               <Form.Control
                 placeholder="Precio *"
                 onChange={onChange}
@@ -167,7 +167,7 @@ function CreateOrEdit({ data }) {
           </Row>
           <Row>
             <Form.Group className="mb-3" controlId="uploadImgBurger">
-              <Form.Label>Image</Form.Label>
+              <Form.Label>Imagen</Form.Label>
               <Form.Control
                 placeholder="Url de la imagen"
                 onChange={setImg}
@@ -178,9 +178,9 @@ function CreateOrEdit({ data }) {
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Weight *</Form.Label>
+              <Form.Label>Peso *</Form.Label>
               <Form.Control
-                placeholder="Weight *"
+                placeholder="Peso *"
                 onChange={onChange}
                 type="number"
                 value={input.weight}
@@ -188,9 +188,9 @@ function CreateOrEdit({ data }) {
               />
             </Form.Group>
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Height *</Form.Label>
+              <Form.Label>Altura *</Form.Label>
               <Form.Control
-                placeholder="Height *"
+                placeholder="Altura *"
                 onChange={onChange}
                 type="number"
                 value={input.height}
@@ -214,9 +214,9 @@ function CreateOrEdit({ data }) {
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Storage *</Form.Label>
+              <Form.Label>Capacidad *</Form.Label>
               <Form.Control
-                placeholder="Storage *"
+                placeholder="Capacidad *"
                 onChange={onChange}
                 type="number"
                 value={input.storage}
@@ -224,9 +224,9 @@ function CreateOrEdit({ data }) {
               />
             </Form.Group>
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Camera *</Form.Label>
+              <Form.Label>Cámara *</Form.Label>
               <Form.Control
-                placeholder="Camera *"
+                placeholder="Cámara *"
                 onChange={onChange}
                 type="number"
                 value={input.camera}
@@ -244,9 +244,9 @@ function CreateOrEdit({ data }) {
               />
             </Form.Group>
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Brand *</Form.Label>
+              <Form.Label>Marca *</Form.Label>
               <Form.Control
-                placeholder="Brand *"
+                placeholder="Marca *"
                 onChange={onChange}
                 type="text"
                 value={input.brands}
@@ -260,9 +260,9 @@ function CreateOrEdit({ data }) {
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Batery *</Form.Label>
+              <Form.Label>Batería *</Form.Label>
               <Form.Control
-                placeholder="Batery *"
+                placeholder="Batería *"
                 onChange={onChange}
                 type="number"
                 value={input.batery}
@@ -270,9 +270,9 @@ function CreateOrEdit({ data }) {
               />
             </Form.Group>
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Quantity *</Form.Label>
+              <Form.Label>Cantidad *</Form.Label>
               <Form.Control
-                placeholder="Quantity *"
+                placeholder="Cantidad *"
                 onChange={onChange}
                 type="number"
                 value={input.quantity}
@@ -280,9 +280,9 @@ function CreateOrEdit({ data }) {
               />
             </Form.Group>
             <Form.Group as={Col} controlId="burgerPrice">
-              <Form.Label>Description *</Form.Label>
+              <Form.Label>Descripción *</Form.Label>
               <Form.Control
-                placeholder="Description *"
+                placeholder="Descripción *"
                 onChange={onChange}
                 type="text"
                 value={input.description}

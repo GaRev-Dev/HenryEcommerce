@@ -121,13 +121,13 @@ function ProductDetail() {
                     </div>
                     <div className="item__container--item">
                       <p>
-                        <strong>Storage:</strong>
+                        <strong>Capacidad:</strong>
                       </p>
                       <p>{producto?.storage} gb</p>
                     </div>
                     <div className="item__container--item item__container--item__right ">
                       <p>
-                        <strong>Camera:</strong>
+                        <strong>Cámara:</strong>
                       </p>
                       <p>{producto?.camera} Mpx</p>
                     </div>
@@ -137,7 +137,7 @@ function ProductDetail() {
                   <div className="item__container_first">
                     <div className="item__container--item">
                       <p>
-                        <strong>Weight:</strong>
+                        <strong>Peso:</strong>
                       </p>
                       <p>{producto?.weight} gr</p>
                     </div>
@@ -149,7 +149,7 @@ function ProductDetail() {
                     </div>
                     <div className="item__container--item item__container--item__right ">
                       <p>
-                        <strong>Battery:</strong>
+                        <strong>Batería:</strong>
                       </p>
                       <p>{producto?.batery} mAh</p>
                     </div>

@@ -70,7 +70,7 @@ function AdminUsers() {
           'https://res.cloudinary.com/dc8w6pspj/image/upload/v1662498810/sucess_otelvh.png',
         imageWidth: 150,
         imageHeight: 150,
-        imageAlt: 'Logo henrys',
+        imageAlt: 'Logo ',
       });
       // setTimeout(function () {
       //   window.location.reload();
@@ -83,10 +83,10 @@ function AdminUsers() {
         title: 'Error',
         text: error.response.data.error[0].msg || 'Algo salio mal..',
         imageUrl:
-          'https://res.cloudinary.com/henrysburgers/image/upload/v1659301854/error-henrys_zoxhtl.png',
+          'https://res.cloudinary.com/dc8w6pspj/image/upload/v1662498810/denied_anoxya.png',
         imageWidth: 150,
         imageHeight: 150,
-        imageAlt: 'Logo henrys',
+        imageAlt: 'Logo ',
       });
     }
   }
@@ -126,6 +126,11 @@ function AdminUsers() {
         customClass: {
           confirmButton: 'confirmBtnSwal',
         },
+        imageUrl:
+          'https://res.cloudinary.com/dc8w6pspj/image/upload/v1662498810/sucess_otelvh.png',
+        imageWidth: 150,
+        imageHeight: 150,
+        imageAlt: 'Logo ',
         title: 'Exito!',
         text: 'Se ha podido desactivar el usuario!',
       });
@@ -137,6 +142,11 @@ function AdminUsers() {
         customClass: {
           confirmButton: 'confirmBtnSwal',
         },
+        imageUrl:
+          'https://res.cloudinary.com/dc8w6pspj/image/upload/v1662498810/denied_anoxya.png',
+        imageWidth: 150,
+        imageHeight: 150,
+        imageAlt: 'Logo ',
         title: 'Error',
         text: error.response.data.error[0].msg || 'Algo salio mal..',
       });
